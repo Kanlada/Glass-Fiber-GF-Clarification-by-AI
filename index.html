@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glass Fiber (GF) Clarification by AI</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb;
+      --accent:#0ea5e9; --accent2:#22c55e; --badge:#e0f2fe; --blue:#2563eb; --emerald:#10b981;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:var(--bg); color:var(--text); font-family: Inter, Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif; line-height:1.65;}
+    .wrap{max-width:1000px; margin:28px auto; padding:0 16px 28px}
+    .header{display:flex; gap:14px; align-items:center; margin-bottom:16px}
+    .logo{width:60px;height:60px;border-radius:14px;flex:0 0 60px;
+      background:
+        radial-gradient(120px 60px at 30% 20%, #38bdf8, transparent 60%),
+        radial-gradient(120px 60px at 70% 70%, #34d399, transparent 60%),
+        linear-gradient(135deg,#0ea5e9,#22c55e);
+      box-shadow:0 10px 20px rgba(14,165,233,.25);
+    }
+    h1{margin:0;font-size:28px;font-weight:800;letter-spacing:.2px}
+    .subtitle{color:var(--muted);margin-top:2px}
+    .badge{display:inline-block;background:var(--badge);color:#0c4a6e;padding:2px 10px;border-radius:999px;font-size:12px;margin-left:8px}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:10px}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:16px;padding:18px; box-shadow:0 10px 24px rgba(30,41,59,.06);}
+    .section-title{margin:0 0 10px;font-size:18px;font-weight:800}
+    .muted{color:var(--muted)}
+    .hr{height:1px;background:var(--line);margin:14px 0}
+    .infogrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .info{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fbfdff;}
+    .info h4{margin:0 0 6px;font-size:15px}
+    .callout{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:12px;background:#f0fdf4;border:1px solid #bbf7d0;color:#065f46;font-size:14px;margin-top:10px}
+    .warn{background:#fffbeb;border-color:#fde68a;color:#92400e}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#1e40af}
+
+    /* CTA button */
+    .btn{appearance:none;border:0;cursor:pointer;border-radius:12px;padding:14px 18px;font-weight:800;font-size:16px;color:white;
+      background:linear-gradient(135deg,var(--accent),var(--accent2)); box-shadow:0 12px 28px rgba(34,197,94,.25); display:inline-flex;align-items:center;gap:10px;text-decoration:none;}
+    .btn:hover{filter:brightness(1.05)}
+
+    /* Icon link */
+    .icon-link{display:inline-flex; align-items:center; gap:12px; text-decoration:none; color:var(--text);
+      border:1px solid var(--line); border-radius:14px; padding:10px 12px; background:#ffffff; transition: box-shadow .2s ease, transform .05s ease;}
+    .icon-link:hover{box-shadow:0 8px 18px rgba(0,0,0,.08); transform:translateY(-1px)}
+    .icon-round{width:44px;height:44px;border-radius:50%;
+      background: conic-gradient(from 0deg, #0ea5e9, #22c55e, #0ea5e9);
+      display:grid; place-items:center; color:white; font-weight:900; font-size:14px; box-shadow:0 8px 18px rgba(14,165,233,.25);
+    }
+    .icon-caption{display:flex;flex-direction:column}
+    .icon-title{font-weight:800; line-height:1}
+    .icon-sub{font-size:12px; color:var(--muted); line-height:1.2}
+    .foot{color:var(--muted);text-align:center;font-size:12px;margin-top:18px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Glass Fiber (GF) Clarification by AI <span class="badge">Microscope Images</span></h1>
+        <div class="subtitle">Quick guide to prepare images and open the AI model for estimation</div>
+      </div>
+    </div>
+
+    <!-- Quick Icon Link (clickable) -->
+    <p>
+      <a
+        class="icon-link"
+        href="https://teachablemachine.withgoogle.com/models/BQVEnIZ30/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open AI Model - Teachable Machine"
+      >
+        <span class="icon-round">AI</span>
+        <span class="icon-caption">
+          <span class="icon-title">Open Model</span>
+          <span class="icon-sub">Teachable Machine</span>
+        </span>
+      </a>
+    </p>
+
+    <div class="grid">
+      <!-- LEFT -->
+      <div class="card">
+        <div class="section-title">🎯 Target</div>
+        <p>
+          To obtain a <b>rough estimation of Glass Fiber (GF) content (%)</b> in polymer samples using
+          <b>microscope images</b> and a pre‑trained classification model.
+        </p>
+        <div class="hr"></div>
+        <div class="section-title">🧪 Experiment Overview</div>
+        <div class="infogrid">
+          <div class="info">
+            <h4>1) Micro Melting Point Apparatus – Yanaco</h4>
+            <ul style="margin:8px 0 0 18px">
+              <li><b>Purpose:</b> Prepare a thin melted film specimen.</li>
+              <li><b>Method:</b> Take a very small amount of the sample and melt it <b>between two glass slides</b> to form a thin film.</li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>2) Microscope – Keyence VHX‑X1</h4>
+            <ul style="margin:8px 0 0 18px">
+              <li><b>Objective:</b> Capture images of the film specimen.</li>
+              <li><b>Recommended Conditions:</b> <b>200× magnification</b>, <b>lower illumination only</b> (brightfield), and clear focus on fibers.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout warn" style="margin-top:12px">
+          ⚠️ Keep imaging conditions <b>consistent with the training set</b> (magnification, lighting, focus). Variations can reduce accuracy.
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="card">
+        <div class="section-title">⬆️ How to Use (Upload Steps)</div>
+        <ol style="margin:8px 0 0 18px">
+          <li>Click <b>Open AI Model</b> (icon above or button below) to go to the model page.</li>
+          <li>Press <span class="mono">Upload Image</span> and select a microscope image (.jpg/.png) from your folder.</li>
+          <li>Wait 1–2 seconds. The model shows class probabilities; the <b>highest probability</b> is the result.</li>
+        </ol>
+        <p style="margin-top:14px">
+          <a
+            class="btn"
+            href="https://teachablemachine.withgoogle.com/models/BQVEnIZ30/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🚀 Open AI Model
+          </a>
+        </p>
+        <div class="hr"></div>
+        <div class="section-title">📷 Recommended Image Quality</div>
+        <p class="muted">
+          • Brightfield; <b>200×</b> fixed magnification • Clear focus on fibers • Avoid heavy contamination, large scale bars, or glare.
+        </p>
+        <div class="callout" style="margin-top:12px">
+          ✅ Tip: If probability &lt; 0.60, re‑capture with better focus/lighting, or crop to a region with clearer fiber texture.
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="card" style="margin-top:16px">
+      <div class="section-title">Disclaimer</div>
+      <p class="muted">
+        This AI provides a <b>screening‑level (rough) estimation</b> of GF content based on visual texture and fiber density/orientation patterns.
+        It is <b>not a substitute for chemical or thermal analysis</b> (e.g., TGA, burn‑off). Results can vary if imaging conditions differ from the
+        training data. Use professional judgment and confirm with reference methods when decisions are critical.
+      </p>
+    </div>
+
+    <p class="foot">© GF Clarification by AI – Internal helper page</p>
+  </div>
+</body>
+</html>
